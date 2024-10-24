@@ -31,7 +31,7 @@ $countResult = $conn->query($countQuery);
 $row = $countResult->fetch_assoc();
 $totalRecords = $row['total'];
 
-// คำนวณจำนวนหน้า
+//  คำนวณจำนวนหน้า 
 $totalPages = ceil($totalRecords / $limit);
 
 // Query ดึงข้อมูลจากตาราง products
